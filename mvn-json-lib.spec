@@ -4,14 +4,14 @@
 #
 Name     : mvn-json-lib
 Version  : 1
-Release  : 1
+Release  : 2
 URL      : https://downloads.sourceforge.net/project/json-lib/json-lib/json-lib-2.3/json-lib-2.3-jdk15-sources.jar
 Source0  : https://downloads.sourceforge.net/project/json-lib/json-lib/json-lib-2.3/json-lib-2.3-jdk15-sources.jar
 Source1  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
 Source2  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
-License  : mvn-json-lib
+License  : Apache-2.0
 Requires: mvn-json-lib-data = %{version}-%{release}
 
 %description
