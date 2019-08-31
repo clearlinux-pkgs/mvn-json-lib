@@ -4,7 +4,7 @@
 #
 Name     : mvn-json-lib
 Version  : 1
-Release  : 4
+Release  : 5
 URL      : https://downloads.sourceforge.net/project/json-lib/json-lib/json-lib-2.3/json-lib-2.3-jdk15-sources.jar
 Source0  : https://downloads.sourceforge.net/project/json-lib/json-lib/json-lib-2.3/json-lib-2.3-jdk15-sources.jar
 Source1  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
