@@ -4,13 +4,14 @@
 #
 Name     : mvn-json-lib
 Version  : 1
-Release  : 6
+Release  : 7
 URL      : https://downloads.sourceforge.net/project/json-lib/json-lib/json-lib-2.3/json-lib-2.3-jdk15-sources.jar
 Source0  : https://downloads.sourceforge.net/project/json-lib/json-lib/json-lib-2.3/json-lib-2.3-jdk15-sources.jar
 Source1  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
-Source2  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
-Source3  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar
-Source4  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.4/json-lib-2.4.pom
+Source2  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.3/json-lib-2.3.jar
+Source3  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
+Source4  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar
+Source5  : https://repo.gradle.org/gradle/libs-releases/net/sf/json-lib/json-lib/2.4/json-lib-2.4.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -37,13 +38,16 @@ mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3.jar
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4.pom
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4.pom
 
 
 %files
@@ -52,6 +56,7 @@ cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/net/sf/json-lib/json-li
 %files data
 %defattr(-,root,root,-)
 /usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3-jdk15.jar
+/usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3.jar
 /usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.3/json-lib-2.3.pom
 /usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar
 /usr/share/java/.m2/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4.pom
